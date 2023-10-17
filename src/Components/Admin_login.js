@@ -13,14 +13,14 @@ const payload={
 const Admin_login = async () => {
   
   try{
-  const response = await fetch('http://127.0.0.1:8080/admin_login', {
+  const response = await fetch('http://127.0.0.1:8000/admin_login', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(payload)
 
-  }).then(()=>{
+  }).then((response)=>{
     if(response.status!==200){
             alert("Invalid Credentials")
           } else {
@@ -32,7 +32,7 @@ const Admin_login = async () => {
 } catch(error){
   console.log(error)
 }
-navigate('/admin')
+
 }
 
 console.log(email+""+password)

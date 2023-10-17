@@ -37,17 +37,24 @@ const AdminPage = () => {
             'date' : "20-10-2023"
         }
     ]
+    const getUserData = async () => {
+        try {
+          const response = await fetch('http://127.0.0.1:8000/all_projects');
+          if (response.ok) {
+            const data = await response.json();
+            setUserData(data);
+          } else {
+            console.error('Failed to fetch data:', response.status, response.statusText);
+          }
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      };
 
     useEffect(() => {
-        const getUserData = async () => {
-            await fetch(`http://127.0.0.1:8080/all_projects`)
-              .then((data) => {
-                setUserData(data);
-              })
-          }
           getUserData()
       }, []);
-
+console.log(user_data)
 
     return (
         <div className='main-container-admin'>
@@ -86,7 +93,7 @@ const AdminPage = () => {
                                         <p>Progress </p>
                                     </div>
                                     <div>
-                                        <p>Date Started </p>
+                                        <p>Project Started </p>
                                     </div>
                                 </div>
                                 <div className='values'>
@@ -100,7 +107,7 @@ const AdminPage = () => {
                                         <p>: {row.progress}%</p>
                                     </div>
                                     <div>
-                                        <p>: {row.date}</p>
+                                        <p>: {row.created_at}</p>
                                     </div>
                                 </div>
                             </div>

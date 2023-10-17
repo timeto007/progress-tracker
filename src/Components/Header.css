@@ -1,0 +1,42 @@
+logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom: 10px;
+}
+header{
+    height:auto;
+    background: rgb(209,208,218);
+/* background: linear-gradient(90deg, rgba(209,208,218,1) 0%, rgba(103,102,111,1) 18%, rgba(98,117,114,1) 63%, rgba(32,36,36,1) 86%, rgba(15,38,18,1) 96%); */
+background:linear-gradient(196deg,#566466,#0a0c16 47%,#087aa5);
+box-shadow: 0 4px 6px rgba(248, 247, 247, 0.1);
+padding:10px;
+border-top:2px solid white;
+border-bottom: 2px solid white;
+border-radius:8px;
+}
+*{
+    box-sizing: border-box;
+
+}
+.user-logo{
+    background-image: url('../Components/Assets/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png');
+    height:35px;
+    width:35px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.icon-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color:white;
+    font-weight:bold;
+
+}
+logo h2{
+    color:white;
+}

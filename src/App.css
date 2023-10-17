@@ -1,0 +1,113 @@
+body{
+  background: linear-gradient(136deg,#220e4d 2%,#6b068e 90.18%);
+
+}
+/* .progress_heading{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,33,121,1) 35%, rgba(0,212,255,1) 100%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+} */
+/* .login-form{
+  background-color: aquamarine;
+}
+.container{
+  color: white;
+} */
+.left1 h2{
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  height: 100vh;
+}
+.form_div,.loginbox{
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signup_input-boxes{
+  color: black;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+.signup_input-boxes:hover{
+  background-color: #f0e8f34e;
+  color: white;
+  opacity: 1;
+}
+.signup_input-boxes:focus{
+  /* color: white; */
+  border: none;
+}
+.submit_btn{
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  color: white;
+  background-color:blueviolet
+}
+.submit_btn:hover{
+  background-color: #2EE59D;
+  color: #6b068e;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+.input-boxes{
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.input-box{
+  margin-top: 10px;
+}
+.input-boxes h5{
+  color: white;
+}
+.login h5{
+  color: rgb(41, 136, 53);
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:770px){
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    color: white;
+    height: 100vh;
+  }
+  .left1{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left1 h2{
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .left1 img{
+    height: 100px;
+    width: 100px;
+  }
+  .form_div,.loginbox{
+    border: 2px solid white;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
+}

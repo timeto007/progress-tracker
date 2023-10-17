@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.cards{
+    border:2px solid rgb(252, 250, 250);
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 9px;
+    background: rgb(209,208,218);
+    background: linear-gradient(90deg, rgba(209,208,218,1) 0%, rgba(227,237,236,1) 27%, rgba(239,245,244,1) 40%, rgba(209,211,211,1) 85%, rgba(234,247,236,1) 96%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+    .dropdown-btn{
+    background-color: black;
+    color:white;
+    font-size: larger;
+    border-radius: 6px;
+    height:50px;
+    width:160px;
+    margin:20px;
+    
+}
+.status-msg{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 1px 1px 0 #000;
+    font-weight: bold;
+}
+.main-container-admin{
+    /* position:relative; */
+    /* background-color: black ; */
+    background: linear-gradient(136deg,#220e4d 2%,#6b068e 90.18%); 
+}
+.dropdown p{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: larger;
+color:white;
+}
+.dropdown{
+    display:flex;
+    align-items: center;
+    gap:3rem;
+}
+.dropdown button{
+    margin:20px;
+}
+.main-container-admin{
+    min-height:150vh;
+    width:100%;
+}
+.username{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    padding:10px;
+}
+.card-holder{
+    /* margin-top: 50px; */
+    border:3px solid rgb(243, 238, 238);
+    margin:20px;
+    border-radius: 8px;
+    /* padding-top: 10px; */
+}
+select{
+    padding-left: 10px;
+    padding-right:10px;
+}
+.percentage{
+    border-radius: 50%;
+    border:2px solid black;
+    color:white;
+    text-align: center;
+    padding:4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 1px 1px 0 #000;
+}
+.status-bar{
+    flex:1;
+    display:flex;
+    justify-content:space-between;
+    margin:20px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+border-radius: 8px;
+}
+.status-container{
+    display:flex;
+    gap:10px;
+    color:white;
+    padding:10px;
+    align-items: center;
+}
+.view-progress-btn{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,65,184,1) 99%, rgba(0,212,255,1) 100%);
+color:white;
+font-weight: bold;
+border-radius: 5px;
+margin-bottom:10px;
+}
+.view-progress-btn:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(83,203,190,1) 1%, rgba(0,212,255,1) 100%);
+color:white;
+font-weight: bold;
+border-radius: 5px;
+}
+.progress-info{
+    border:4px solid black;
+    display:flex;
+    margin:20px;
+    border-radius: 9px;
+    
+}
+.progressbar div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.fields{
+    flex:0.3;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:20px;
+    font-weight: bold;
+}
+.values{
+    flex:0.7;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.icon-container{
+display:flex;
+
+}

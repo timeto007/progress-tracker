@@ -12,26 +12,26 @@ const Login = () => {
 
   const logInFunc = async () => {
     
-  //   try{
-  //   const response = await fetch('http://127.0.0.1:8080/signin', {
-  //     method: 'post',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(payload)
+    try{
+    const response = await fetch('http://127.0.0.1:8000/signin', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
 
-  //   }).then(()=>{
-  //     if(response.status!==200){
-  //       alert("Invalid Credentials")
-  //     } else {
-  //       navigate('/users_portal')
-  //     }
-  //     })
-  //   console.log("Signup Check"+response)
-  // } catch(error){
-  //   console.log(error)
-  // }
-  navigate('/users_portal')
+    }).then((response)=>{
+      if(response.status!==200){
+        alert("Invalid Credentials")
+      } else {
+        navigate('/users_portal')
+      }
+      })
+    
+  } catch(error){
+    console.log(error)
+  }
+  
   }
   return (
     <>

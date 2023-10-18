@@ -1,41 +1,43 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Sign_up = () => {
   const [email,setEmail] = useState();
   const [name, setName]=useState();
   const [password, setPassword]=useState();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const payload = {
-    name: name,
-    email: email,
-    password: password,
+    "name": "azad",
+    "email": "azad123@gmail.com",
+    "password": 1234
   }
+  console.log(JSON.stringify(payload))
 
   const signUpFunc = async () => {
-  //   try{
-  //   const response = await fetch('http://127.0.0.1:8080/signup', {
-  //     method: 'post',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(payload)
-
-  //   }).then((response)=>{
-  //     if(response.status!==200){
-  //       alert("Please Enter Valid Details")
-  //     } else {
-  //       navigate('/login')
-  //     }
-  //     })
-  //   console.log("Signup Check"+response)
-  // } catch(error){
-  //   console.log(error)
-  // }
-  // navigate('/login')
+    try{
+    const response = await fetch('http://127.0.0.1:8000/signup', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+      
+    }).then((response)=>{
+      if(response.status!==200){
+        console.log(response)
+        alert("Please Enter Valid Details")
+      } else {
+        navigate('/login')
+      }
+      })
+    
+  } catch(error){
+    console.log(error)
+  }
+ 
   }
   return (
     <>

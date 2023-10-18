@@ -34,14 +34,20 @@ const UserPage = () => {
   const logInFunc = async () => {
     
     try {
-      const response = await fetch('http://127.0.0.1:8080/signin', {
+      const response = await fetch('http://127.0.0.1:8000/add_project', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(payload)
 
-      })
+      }).then((response)=>{
+        if(response.status!==200){
+          alert("Data Failed to Save")
+        } else {
+          alert("Data Saved Successfully")
+        }
+        })
     }
      catch(error){
       console.log("Error")

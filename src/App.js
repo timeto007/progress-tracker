@@ -18,7 +18,7 @@ function App() {
         <Route path='/admin_login' exact Component={Admin_Login} />
       </Routes >
       </BrowserRouter>
-    
+    {/* dncdlcldknclkdbckldbclkdbcldc */}
     </>
   );
 }
